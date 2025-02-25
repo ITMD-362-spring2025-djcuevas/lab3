@@ -21,7 +21,7 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: sans-serif; /* 1 */
+  font-family: "Times New Roman", Times, serif; /* 1 */
   font-size: 100%; /* 1 */
   line-height: 1.15; /* 1 */
   margin: 0; /* 2 */
@@ -198,11 +198,35 @@ html {
   text-rendering: optimizeLegibility;
 }
 
+body{
+  color:rgb(77, 52, 52);
+}
 label {
   display: block;
 }
 
 /* ===== LAYOUT STYLES ====== */
-
+form {
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: rgb(165, 165, 165);
+  border-radius: 5px;
+}
 
 /* ===== STATE STYLES ======= */
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+  background-color: darkgray;
+  outline: none;
+}
+button[type="submit"]:hover {
+  background-color: #555;
+}
+
+button[type="submit"]:active {
+  background-color: #333;
+}
