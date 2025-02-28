@@ -58,6 +58,7 @@ button, select {
 }
 
 button, html [type="button"], [type="reset"], [type="submit"] {
+  appearance: button;
   -webkit-appearance: button;
 }
 
@@ -107,6 +108,7 @@ textarea {
 }
 
 [type="search"] {
+  appearance: textfield;
   -webkit-appearance: textfield;
   outline-offset: -2px;
 }
@@ -117,6 +119,7 @@ textarea {
 }
 
 ::-webkit-file-upload-button {
+  appearance: button;
   -webkit-appearance: button;
   font: inherit;
 }
